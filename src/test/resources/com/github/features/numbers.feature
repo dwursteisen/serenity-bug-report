@@ -1,13 +1,9 @@
-Feature: Show a bug in the SerenityBDD reporting
+#language: fr
 
-  Scenario Outline: This scenario should be marked as pending
+Fonctionnalité: Réussir à avoir des scénarios avec des accents
 
-    Given the number <a> and the number <b>
-    When <a> plus <b>
-    Then the result is equals to <c>
+  Scénario: Réussir à avoir des scénarios avec des accents
 
-
-    Examples:
-      | a | b | c |
-      | 1 | 4 | 5 |
-      | 2 | 7 | 9 |
+    Etant donné ça
+    Quand y'a ça
+    Alors ça
