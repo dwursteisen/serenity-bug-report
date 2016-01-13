@@ -1,0 +1,95 @@
+D:\applis\jdk-1.8\bin\java "-Dmaven.home=D:\IntelliJ IDEA Community Edition 15.0.2\plugins\maven\lib\maven3" "-Dclassworlds.conf=D:\IntelliJ IDEA Community Edition 15.0.2\plugins\maven\lib\maven3\bin\m2.conf" -Didea.launcher.port=7536 "-Didea.launcher.bin.path=D:\IntelliJ IDEA Community Edition 15.0.2\bin" -Dfile.encoding=UTF-8 -classpath "D:\IntelliJ IDEA Community Edition 15.0.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.4.jar;D:\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=15.0.2 clean install
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] bug
+[INFO] parent
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bug 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ bug ---
+[INFO] Deleting D:\applis\ws\serenity-bug-report\module\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ bug ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\applis\ws\serenity-bug-report\module\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ bug ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ bug ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ bug ---
+[INFO] Compiling 3 source files to D:\applis\ws\serenity-bug-report\module\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ bug ---
+[INFO] Surefire report directory: D:\applis\ws\serenity-bug-report\module\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.github.features.SerenityBugTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+1 Scenarios ([32m1 passed[0m)
+3 Steps ([32m3 passed[0m)
+0m0,075s
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.745 sec
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ bug ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: D:\applis\ws\serenity-bug-report\module\target\bug-1.0-SNAPSHOT.jar
+[INFO]
+[INFO] --- serenity-maven-plugin:1.1.21:aggregate (serenity-reports) @ bug ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Merging requirements = []
+Merging requirements = []
+Merged requirements set = []
+GENERATE CUSTOM REPORTS
+[INFO]
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ bug ---
+[INFO] Installing D:\applis\ws\serenity-bug-report\module\target\bug-1.0-SNAPSHOT.jar to D:\applis\m2repo\serenity\bug\1.0-SNAPSHOT\bug-1.0-SNAPSHOT.jar
+[INFO] Installing D:\applis\ws\serenity-bug-report\module\pom.xml to D:\applis\m2repo\serenity\bug\1.0-SNAPSHOT\bug-1.0-SNAPSHOT.pom
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building parent 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ parent ---
+[INFO] Deleting D:\applis\ws\serenity-bug-report\target
+[INFO]
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ parent ---
+[INFO] Installing D:\applis\ws\serenity-bug-report\pom.xml to D:\applis\m2repo\serenity\parent\1.0-SNAPSHOT\parent-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] bug ............................................... SUCCESS [5.642s]
+[INFO] parent ............................................ SUCCESS [0.164s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.890s
+[INFO] Finished at: Wed Jan 13 15:14:56 CET 2016
+[INFO] Final Memory: 35M/304M
+[INFO] ------------------------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+
+Process finished with exit code 0
