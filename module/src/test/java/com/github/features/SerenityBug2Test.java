@@ -8,6 +8,6 @@ import org.junit.runner.RunWith;
  * Created by david on 13/10/15.
  */
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/com/github/features/a")
-public class SerenityBugTest {
+@CucumberOptions(features = "src/test/resources/com/github/features/b")
+public class SerenityBug2Test {
 }

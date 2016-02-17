@@ -1,6 +1,6 @@
 #language: fr
 
-Fonctionnalité: AA scénario
+Fonctionnalité: aa
 
   Scénario: Réussir à avoir des scénarios avec des accents
 
