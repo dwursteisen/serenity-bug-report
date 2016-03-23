@@ -2,7 +2,7 @@
 
 Fonctionnalité: Bla
 
-  Scénario: Réussir à avoir des scénarios avec des accents
+  Scénario: dernier scénario
 
     Etant donné ça
     Quand y'a ça

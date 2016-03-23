@@ -2,7 +2,7 @@
 
 Fonctionnalité: BB scénario
 
-  Scénario: Réussir à avoir des scénarios avec des accents
+  Scénario: Je suis le scénario B
 
     Etant donné ça
     Quand y'a ça

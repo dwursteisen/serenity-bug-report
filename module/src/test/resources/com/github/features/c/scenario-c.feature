@@ -2,7 +2,7 @@
 
 Fonctionnalité: AA scénario
 
-  Scénario: Réussir à avoir des scénarios avec des accents
+  Scénario: et là, je suis le scénario c
 
     Etant donné ça
     Quand y'a ça
