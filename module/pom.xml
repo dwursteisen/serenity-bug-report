@@ -8,6 +8,46 @@
     <artifactId>bug</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <profiles>
+        <profile>
+            <id>all</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <test.runners>**/*Test.java</test.runners>
+                <serenity.properties>serenity.properties</serenity.properties>
+            </properties>
+        </profile>
+        <profile>
+            <id>a</id>
+            <properties>
+                <test.runners>**/Serenity1BugTest.java</test.runners>
+                <serenity.properties>serenity-a.properties</serenity.properties>
+            </properties>
+        </profile>
+        <profile>
+            <id>b</id>
+            <properties>
+                <test.runners>**/Serenity2BugTest.java</test.runners>
+                <serenity.properties>serenity-b.properties</serenity.properties>
+            </properties>
+        </profile>
+        <profile>
+            <id>c</id>
+            <properties>
+                <test.runners>**/Serenity3BugTest.java</test.runners>
+                <serenity.properties>serenity-c.properties</serenity.properties>
+            </properties>
+        </profile>
+        <profile>
+            <id>d</id>
+            <properties>
+                <test.runners>**/Serenity4BugTest.java</test.runners>
+                <serenity.properties>serenity-d.properties</serenity.properties>
+            </properties>
+        </profile>
+    </profiles>
     <dependencies>
         <dependency>
             <groupId>info.cukes</groupId>
@@ -55,7 +95,7 @@
             <artifactId>serenity-core</artifactId>
             <version>${serenity.version}</version>
         </dependency>
-<!-- add for debugging -->
+        <!-- add for debugging -->
         <!--
         <dependency>
             <groupId>net.serenity-bdd.maven.plugins</groupId>
@@ -112,17 +152,17 @@
                     </execution>
                 </executions>
             </plugin>
-<!--
+
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.19.1</version>
+                <version>2.17</version>
                 <configuration>
+                    <systemProperties>
+                        <properties>${serenity.properties}</properties>
+                    </systemProperties>
                     <includes>
-                        <include>**/*Test.java</include>
+                        <include>${test.runners}</include>
                     </includes>
-                    <parallel>classes</parallel>
-                    <forkCount>1C</forkCount>
-                    <useUnlimitedThreads>true</useUnlimitedThreads>
                 </configuration>
                 <executions>
                     <execution>
@@ -134,7 +174,7 @@
                     </execution>
                 </executions>
             </plugin>
--->
+
         </plugins>
     </build>
 </project>
